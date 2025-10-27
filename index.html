@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="PLAYER ONE">PLAYER ONE</h1>
+            <p class="tagline">Level Up Your Code | Score High in Development</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">XP</span>
+                    <span class="stat-value" id="xp">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Level</span>
+                    <span class="stat-value" id="level">1</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">High Score</span>
+                    <span class="stat-value" id="highscore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="game-menu">
+            <button class="menu-btn active" data-section="games">🎮 Games</button>
+            <button class="menu-btn" data-section="about">👨‍💻 About</button>
+            <button class="menu-btn" data-section="skills">⚡ Skills</button>
+            <button class="menu-btn" data-section="projects">🏆 Projects</button>
+        </nav>
+
+        <main>
+            <!-- Games Section -->
+            <section id="games" class="section active">
+                <h2>🎮 Choose Your Game</h2>
+                <div class="games-grid">
+                    <div class="game-card" data-game="snake">
+                        <div class="game-icon">🐍</div>
+                        <h3>Snake Master</h3>
+                        <p>Classic snake game with a modern twist</p>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                    <div class="game-card" data-game="pong">
+                        <div class="game-icon">🏓</div>
+                        <h3>Retro Pong</h3>
+                        <p>Test your reflexes in this arcade classic</p>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                    <div class="game-card" data-game="memory">
+                        <div class="game-icon">🧠</div>
+                        <h3>Memory Match</h3>
+                        <p>Match coding concepts and test your memory</p>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                    <div class="game-card" data-game="typing">
+                        <div class="game-icon">⌨️</div>
+                        <h3>Code Typer</h3>
+                        <p>Speed typing challenge with code snippets</p>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>👨‍💻 About the Developer</h2>
+                <div class="about-content">
+                    <div class="profile-card">
+                        <div class="avatar">👨‍💻</div>
+                        <h3>Full Stack Developer</h3>
+                        <p>Passionate about creating interactive experiences and solving complex problems through code. 
+                           Combining creativity with technical expertise to build engaging applications.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-btn">GitHub</a>
+                            <a href="#" class="social-btn">LinkedIn</a>
+                            <a href="#" class="social-btn">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2>⚡ Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎮</div>
+                        <h3>Game Dev</h3>
+                        <div class="skill-tags">
+                            <span>Canvas API</span>
+                            <span>WebGL</span>
+                            <span>Three.js</span>
+                            <span>Game Logic</span>
+                            <span>Animation</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2>🏆 Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>E-Commerce Platform</h3>
+                            <span class="badge">⭐ Featured</span>
+                        </div>
+                        <p>Full-stack e-commerce solution with payment integration</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Real-time Chat App</h3>
+                            <span class="badge">🔥 Popular</span>
+                        </div>
+                        <p>WebSocket-based chat application with rooms</p>
+                        <div class="project-tech">
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AI Code Assistant</h3>
+                            <span class="badge">🆕 New</span>
+                        </div>
+                        <p>AI-powered tool for code suggestions and debugging</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">×</button>
+            <h2 id="gameTitle"></h2>
+            <div id="gameContainer"></div>
+            <div class="game-controls">
+                <button id="startGame" class="control-btn">Start Game</button>
+                <button id="pauseGame" class="control-btn" style="display:none;">Pause</button>
+                <div id="gameScore" class="score-display">Score: 0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
